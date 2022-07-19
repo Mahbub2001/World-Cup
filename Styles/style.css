@@ -72,11 +72,9 @@ aside{
 .aside-div{
     padding: 30px;
 }
-
 aside a{
     display:block;
     color: black;
-    border: 1px solid white;
     background-color: white;
     text-decoration: none;
     margin-bottom: 30px;
@@ -86,6 +84,10 @@ aside a{
     font-weight:700;
     letter-spacing: 2px;
 
+}
+.aside-div :nth-child(3){
+    background: linear-gradient(#EA5A6F, #DE791E, #FCCF34);
+    color: white;
 }
 /* ------------------------------------Section----------------------------- */
 .blogs{
@@ -161,3 +163,7 @@ footer hr{
 .fa-brands{
     color: white;
 }
+
+
+/*---------------------------------- RESPOONSIVE DESIGN----------------------------------- */
+
