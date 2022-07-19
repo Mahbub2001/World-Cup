@@ -1,0 +1,168 @@
+ /* --------------------Google Font------------------ */
+ @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap');
+
+ /* -------------------------------------------------- */
+
+ body{
+    font-family: 'Source Sans Pro', sans-serif;
+ }
+
+ /* -------------------Header------------------------- */
+header{ 
+    background-color: #161616;
+    margin-left:140px;
+    margin-right: 140px;
+    margin-top: 50px;
+    /* width:100%; */
+    height: 646px;
+    color: white;
+    border-radius: 25px;
+}
+.header-div{
+    display: flex;
+    justify-content: space-around;
+    display:flex ;
+    padding-top: 111px;
+    padding-bottom: 111px;
+    padding-left: 106px;
+}
+header h1{
+    font-size: 70px;
+    margin-top: -15px;
+} 
+header p{
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+header a{
+    color: white;
+    text-decoration: none;
+    padding: 16px 25px;
+    word-spacing: 5px;
+    background-color: red;
+    border-radius: 5px;
+    font-weight: 700;
+}
+#messi{
+    margin-top: -110px;
+    width: 500px;
+}
+
+ /* -------------------------------------------------- */
+
+ /* --------------------------------------------------- ----*/
+/* -------------------------MAIN START--------------------- */
+/* -------------------------------------------------------- */
+main{
+    margin-left:140px;
+    margin-right: 140px;
+}
+
+/*---------------------------Aside------------------------- */
+.matches-section{
+    margin-top: 130px;
+    display: flex;
+}
+aside{
+    width: 312px;
+    border-radius: 15px;
+    height: 312px;
+    background-color:#161616;
+}
+.aside-div{
+    padding: 30px;
+}
+
+aside a{
+    display:block;
+    color: black;
+    border: 1px solid white;
+    background-color: white;
+    text-decoration: none;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 20px 30px;
+    text-align: center;
+    font-weight:700;
+    letter-spacing: 2px;
+
+}
+/* ------------------------------------Section----------------------------- */
+.matches{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px 25px;
+}
+.match{
+    margin-left: 24px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 2px #bdbdbd;
+    width: 312px;
+    height: 242px;
+}
+.match article{
+    text-align: center;
+    font-weight: 1000;
+}
+.flags{
+    display: flex;
+    padding-top: 53px;
+    justify-content: space-evenly;
+}
+.flags p{
+    font-weight: 1000;
+}
+.match button{
+    padding: 5px 15px;
+    border-radius: 10px;
+    background-color: white;
+}
+.match article{
+    padding: 20px;
+}
+
+ /* --------------------------------------------------- ----*/
+/* -------------------------MAIN END--------------------- */
+/* -------------------------------------------------------- */
+
+/* --------------------------------------------------------- */
+/* -------------------------Footer START---------------------*/
+/* -------------------------------------------------------- */
+
+footer{
+    margin-top: 130px;
+    background-color:#161616;
+    width: 100%;
+    height: 444px; 
+}
+footer h2{
+    color: white;
+    text-align: center;
+    padding-top: 130px;
+}
+footer hr{
+    color: white;
+    margin-top: 30px;
+    width: 1320px;    
+}
+.footer-div{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    text-align: center;
+    margin: 50px 353px;
+    
+}
+.footer-div a{
+    color:white;
+    text-decoration: none;
+}
+.social{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    margin: 50px 700px;
+    font-size: 30px;
+}
+.fa-brands{
+    color: white;
+}
