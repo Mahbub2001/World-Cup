@@ -298,10 +298,10 @@ footer hr{
       height: 48px;
       margin-bottom: 30px;
     }
-    .button:hover .fa-chevron-right {
+    /* .button:hover .fa-chevron-right {
       left: 150px;
       top: 37px;
-    }
+    } */
   }
 /* -------------------------------------------------------------For Mobile Phones:------------------------------------------------ */
 
