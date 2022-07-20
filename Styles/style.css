@@ -6,7 +6,6 @@
     font-family: 'Source Sans Pro', sans-serif;
  }
 .container{
-
     padding: 2%;
     display: flex;
     justify-content: center;
@@ -23,7 +22,6 @@
     border-radius: 30px;
     width: 1321px;
     height: 646px;
-    animation: color-change 40s ease-in-out 0s infinite alternate;
 }
 header h1{
     font-weight: 700;
@@ -191,8 +189,10 @@ aside{
 footer{
     padding: 2%;
     margin: 0 auto;
+    margin-top: 5%;
     text-align: center;
     background-color: #161616;
+    height: 300px;
 }
 footer h2{
     font-weight: 600;

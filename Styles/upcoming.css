@@ -3,59 +3,57 @@
 
  /* -------------------------------------------------- */
  body{
-    font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color:lightslategray;
  }
 .container{
-
-    padding: 2%;
-    display: flex;
-    justify-content: center;
-    align-items: center;      
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;      
 }
  /* -------------------Header------------------------- */
 
 .header-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-    background-color: #161616;
-    border-radius: 30px;
-    width: 1321px;
-    height: 646px;
-    animation: color-change 40s ease-in-out 0s infinite alternate;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 24px;
+background-color: #161616;
+border-radius: 30px;
+width: 1321px;
+height: 646px;
 }
 header h1{
-    font-weight: 700;
-    font-size: 70px;
-    color: #ffffff;
+  font-weight: 700;
+  font-size: 70px;
+  color: #ffffff;
 } 
 .header-text {
-    padding-top: 111px;
-    padding-bottom: 111px;
-    padding-left: 106px;
-  }
+  padding-top: 111px;
+  padding-bottom: 111px;
+  padding-left: 106px;
+}
   
-  .header-description {
-    font-weight: 400;
-    font-size: 16px;
-    color: #ffffff;
-  }
+.header-description {
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+}
   
-  .header-illustration img {
-    width: 581px;
-    height: 613px;
-    padding-top: 33px;
-    padding-right: 79px;
-  }
-
-  .fa-angle-right {
-    color: #ffffff;
-  }
+.header-illustration img {
+  width: 581px;
+  height: 613px;
+  padding-top: 33px;
+  padding-right: 79px;
+}
+.fa-angle-right {
+  color: #ffffff;
+}
   
-  .half-width {
-    width: 50%;
-  }
+.half-width {
+  width: 50%;
+}
  /* ------------------------HEADER END-------------------------- */
 
  /* --------------------------------------------------- ----*/
@@ -167,8 +165,10 @@ aside{
 footer{
     padding: 2%;
     margin: 0 auto;
+    margin-top: 5%;
     text-align: center;
     background-color: #161616;
+    height: 300px;
 }
 footer h2{
     font-weight: 600;
