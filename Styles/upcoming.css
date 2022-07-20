@@ -149,11 +149,11 @@ aside{
     gap: 24px;
 }
 .blog{
-    background-image: url('/assets/5026563.jpg');
+  background-color: white;
     width: 312px;
     height: 362px;
     border-radius: 10px;
-    box-shadow: 5px 1px 5px  #000000;
+    box-shadow: 5px 1px 5px 5px #000000;
 
 }
 #upcoming-blog span{
@@ -181,7 +181,6 @@ aside{
   padding-right: 10px;
 }
 .blog-description{
-    background-image: url(/assets/5026563.jpg);
     color: rgb(0, 0, 0);
     margin-right: 10px;
 }
