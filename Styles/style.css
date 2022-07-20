@@ -128,11 +128,16 @@ aside{
     height: 64px;
     border-radius: 10px;
 }
+.aside-button:focus {
+  outline-color: transparent;
+  outline-style:solid;
+  box-shadow: 0 0 0 4px #5a01a7;
+  transition: 0.17s;
+}
 .aside-button a{
     text-decoration: none;
     font-weight: 500;
     font-size: 20px;
-    line-height: 30px;
     color: #161616;
 }
 #active {
@@ -217,10 +222,13 @@ footer hr{
     font-size: 20px;
     margin-right: 1rem;
 }
+.social a{
+  padding: 15px 15px;
+}
 .fa-brands{
     color: white;
+    font-size: 30px;
 }
-
 
 /*---------------------------------- RESPOONSIVE DESIGN----------------------------------- */
 /* Tablet Style */
