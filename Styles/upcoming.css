@@ -114,6 +114,7 @@ aside{
     gap: 24px;
 }
 .blog{
+    background-image: url('/assets/5026563.jpg');
     width: 312px;
     height: 362px;
     border-radius: 10px;
@@ -140,11 +141,12 @@ aside{
 .blog-ic img{
     border-radius: 10px 10px 0px 0px;
 }
-.blog-description{
-    margin: 20px;
+.blog-ic span{
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .blog-description{
-    color: rgba(22, 22, 22, 0.7);
+    color: rgb(0, 0, 0);
     margin-right: 10px;
 }
 .time {
@@ -191,8 +193,12 @@ footer hr{
     font-size: 20px;
     margin-right: 1rem;
 }
+.social a{
+  padding: 15px 15px;
+}
 .fa-brands{
     color: white;
+    font-size: 30px;
 }
 
 /* ----------------------------------------------------------------------------------------- */
