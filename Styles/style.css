@@ -2,163 +2,225 @@
  @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap');
 
  /* -------------------------------------------------- */
-
  body{
     font-family: 'Source Sans Pro', sans-serif;
  }
+.container{
 
- /* -------------------Header------------------------- */
-header{ 
-    background-color: #161616;
-    margin-left:140px;
-    margin-right: 140px;
-    margin-top: 50px;
-    /* width:100%; */
-    height: 646px;
-    color: white;
-    border-radius: 25px;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;      
 }
+ /* -------------------Header------------------------- */
+
 .header-div{
     display: flex;
-    justify-content: space-around;
-    display:flex ;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    background-color: #161616;
+    border-radius: 30px;
+    width: 1321px;
+    height: 646px;
+    animation: color-change 40s ease-in-out 0s infinite alternate;
+}
+header h1{
+    font-weight: 700;
+    font-size: 70px;
+    color: #ffffff;
+} 
+.header-text {
     padding-top: 111px;
     padding-bottom: 111px;
     padding-left: 106px;
-}
-header h1{
-    font-size: 70px;
-    margin-top: -15px;
-} 
-header p{
+  }
+  
+  .header-description {
+    font-weight: 400;
     font-size: 16px;
-    padding-bottom: 15px;
-}
-header a{
-    color: white;
-    text-decoration: none;
-    padding: 16px 25px;
-    word-spacing: 5px;
-    background-color: red;
-    border-radius: 5px;
-    font-weight: 700;
-}
-#messi{
-    margin-top: -110px;
-    width: 500px;
-}
+    color: #ffffff;
+  }
+  
+  .header-illustration img {
+    width: 581px;
+    height: 613px;
+    padding-top: 33px;
+    padding-right: 79px;
+  }
 
+  @keyframes button-color-change {
+    0% {
+      background-image: linear-gradient(to right, #642b73, #c6426e);
+      transition: all 2s ease-in-out;
+    }
+  
+    100% {
+      background-image: linear-gradient(to left, #642b73, #c6426e);
+      transition: all 2s ease-in-out;
+    }
+  }
+
+  .button {
+    width: 187px;
+    height: 56px;
+    /* background-image: linear-gradient(to right, #5a3f37, #2c7744); */
+    border-radius: 5px;
+    position: relative;
+    /* transition: all 1s ease-in-out; */
+    animation: button-color-change 2s ease-in-out 0s infinite alternate;
+    animation-play-state: running;
+  }
+  
+  .button:hover .fa-angle-right {
+    transform: scale(1.5) translate(-100%, -100%);
+    position: absolute;
+    top: 40px;
+    left: 170px;
+  }
+  
+  .button:hover {
+    background-image: linear-gradient(to right, #2c7744, #5a3f37);
+  }
+  
+  .button a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
+    margin-right: 10px;
+  }
+  
+  .fa-angle-right {
+    color: #ffffff;
+  }
+  
+  .half-width {
+    width: 50%;
+  }
  /* -------------------------------------------------- */
 
  /* --------------------------------------------------- ----*/
 /* -------------------------MAIN START--------------------- */
 /* -------------------------------------------------------- */
-main{
-    margin-left:140px;
-    margin-right: 140px;
-}
 
 /*---------------------------Aside------------------------- */
 .blogs-section{
-    margin-top: 130px;
     display: flex;
+    gap: 24px;
 }
 aside{
     width: 312px;
-    border-radius: 15px;
     height: 312px;
-    background-color:#161616;
+    background-color: #161616;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .aside-div{
-    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
-aside a{
-    display:block;
-    color: black;
-    background-color: white;
-    text-decoration: none;
-    margin-bottom: 30px;
+.aside-button{
+    width: 252px;
+    height: 64px;
     border-radius: 10px;
-    padding: 20px 30px;
-    text-align: center;
-    font-weight:700;
-    letter-spacing: 2px;
+}
+.aside-button a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #161616;
+}
+#active {
+    background-color: #dd0000;
+  }
+  
+  #active a {
+    color: #ffffff;
+  }
 
-}
-.aside-div :nth-child(3){
-    background: linear-gradient(#EA5A6F, #DE791E, #FCCF34);
-    color: white;
-}
 /* ------------------------------------Section----------------------------- */
 .blogs{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 15px 25px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
 }
 .blog{
-    margin-left: 24px;
+    width: 312px;
+    height: 362px;
     border-radius: 10px;
     /* border: 1px transparent black; */
     box-shadow: 1px 1px 5px 5px #bdbdbd;
-    width: 312px;
-    height: 362px;
-}
-.blog button{
-    padding: 5px 15px;
-    border-radius: 10px;
-    background-color: white;
-}
-.blog article{
-    padding: 20px;
-}
-.blog-icon{
-    display: flex;
-}
-.blog-icons{
-    margin: 0 10px;
-}
 
+}
+.blog-ic img{
+    border-radius: 10px 10px 0px 0px;
+}
+.blog-description{
+    margin: 20px;
+}
+.blog-description{
+    color: rgba(22, 22, 22, 0.7);
+    margin-right: 10px;
+}
+.transfer-button{
+    width: 100px;
+    height: 32px;
+    color: #161616;
+}
+.blog-text{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #161616;
+}
+.time {
+    margin-right: 30px;
+  }
  /* --------------------------------------------------- ----*/
 /* -------------------------MAIN END--------------------- */
 /* -------------------------------------------------------- */
-
+.view-all {
+    display: none;
+  }
 /* --------------------------------------------------------- */
 /* -------------------------Footer START---------------------*/
 /* -------------------------------------------------------- */
 
 footer{
-    margin-top: 130px;
-    background-color:#161616;
-    width: 100%;
-    height: 444px; 
+    padding: 2%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #161616;
 }
 footer h2{
-    color: white;
-    text-align: center;
-    padding-top: 130px;
+    font-weight: 600;
+    font-size: 40px;
+    color: #ffffff;
 }
 footer hr{
-    color: white;
-    margin-top: 30px;
-    width: 1320px;    
+    border: 1px solid rgba(255, 255, 255, 0.1); 
 }
 .footer-div{
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    text-align: center;
-    margin: 50px 353px;
-    
+    margin-bottom: 20px;  
 }
 .footer-div a{
-    color:white;
     text-decoration: none;
+    margin-right: 1.5em;
+    font-weight: 500;
+    font-size: 16px;
+    color: #b9b9b9;
 }
 .social{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    text-align: center;
-    margin: 50px 700px;
-    font-size: 30px;
+    color: rgb(99, 109, 197);
+    font-size: 20px;
+    margin-right: 1rem;
 }
 .fa-brands{
     color: white;
@@ -166,4 +228,115 @@ footer hr{
 
 
 /*---------------------------------- RESPOONSIVE DESIGN----------------------------------- */
+/* Tablet Style */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .header-div {
+      width: 100%;
+    }
+    .header-text .header-title {
+        font-size: 40px;
+      }
+    .header-pic img{
+      width: 100%;
+    }
+    .blogs-section{
+      flex-direction: column;
+    }
+    .aside-div {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    aside {
+      width: 100%;
+      margin: 0 auto;
+      background-color: #ffff;
+    }
+  
+    .blogs {
+      grid-template-columns: repeat(2, 1fr);
+      padding-left: 7%;
+    }
+  
+    .view-all {
+      display: block;
+      width: 131px;
+      height: 47px;
+      background-color: #dd0000;
+      border-radius: 5px;
+    }
+    .view-all a {
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px;
+      text-align: center;
+      color: #ffffff;
+    }
+    .view-all-button-section{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10%;
+    }
+  
+    .button {
+      width: 161px;
+      height: 48px;
+      margin-bottom: 30px;
+    }
+    .button:hover .fa-chevron-right {
+      left: 150px;
+      top: 37px;
+    }
+  }
+/* For Mobile Phones: */
 
+@media only screen and (max-width: 767px) {
+    .header-div {
+      width: 334px;
+      height: 472px;
+      flex-direction: column;
+      gap: 0;
+    }
+    .header-text {
+      margin: 0%;
+      padding: 0;
+      text-align: center;
+    }
+    .header-text .header-title {
+      font-size: 22px;
+    }
+    .header-text .header-description {
+      font-size: 14px;
+      text-overflow: ellipsis;
+      margin-bottom: 20px;
+    }
+  
+    .header-text .button {
+      width: 161px;
+      height: 40px;
+    }
+    .button a {
+      font-size: 20px;
+    }
+    .header-pic img {
+      width: 233px;
+      height: 245px;
+      margin: 0%;
+      padding: 0%;
+    }
+    .blogs-section {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .blogs {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .button:hover .fa-chevron-right {
+      left: 145px;
+      top: 35px;
+    }
+  }
+  
