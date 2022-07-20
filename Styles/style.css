@@ -12,7 +12,42 @@
     align-items: center;      
 }
  /* -------------------Header------------------------- */
+ @keyframes background_color { 
+  0% {
+    background-color: #46b2e0;
+  }  
+  10% {
+    background-color: #35bdd0;
+  }  
+  20% {
+    background-color: #f4ce6a;
+  }  
+  30% {
+    background-color: #e6425e;
+  }  
+  40% {
+    background-color: #38cc77;
+  }  
+  50% {
+    background-color: #6ac47e;
+  }  
+  60% {
+    background-color: #cad5e2;
+  }
+  70% {
+    background-color: #eb4d4b;
+  }  
+  80% {
+    background-color: #03c6c7;
+  }
+  90% {
+    background-color: #5da3fa;
+  }
+  100% {
+    background-color: #e5d68a;
+  }
 
+}
 .header-div{
     display: flex;
     justify-content: center;
@@ -22,6 +57,7 @@
     border-radius: 30px;
     width: 1321px;
     height: 646px;
+    animation: background_color 30s ease-in-out 0s infinite alternate;
 }
 header h1{
     font-weight: 700;
