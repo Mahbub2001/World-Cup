@@ -83,48 +83,6 @@ header h1{
     padding-right: 79px;
   }
 
-  @keyframes button-color-change {
-    0% {
-      background-image: linear-gradient(to right, #642b73, #c6426e);
-      transition: all 2s ease-in-out;
-    }
-  
-    100% {
-      background-image: linear-gradient(to left, #642b73, #c6426e);
-      transition: all 2s ease-in-out;
-    }
-  }
-
-  .button {
-    width: 187px;
-    height: 56px;
-    /* background-image: linear-gradient(to right, #5a3f37, #2c7744); */
-    border-radius: 5px;
-    position: relative;
-    /* transition: all 1s ease-in-out; */
-    animation: button-color-change 2s ease-in-out 0s infinite alternate;
-    animation-play-state: running;
-  }
-  
-  .button:hover .fa-angle-right {
-    transform: scale(1.5) translate(-100%, -100%);
-    position: absolute;
-    top: 40px;
-    left: 170px;
-  }
-  
-  .button:hover {
-    background-image: linear-gradient(to right, #2c7744, #5a3f37);
-  }
-  
-  .button a {
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 20px;
-    color: #ffffff;
-    margin-right: 10px;
-  }
-  
   .fa-angle-right {
     color: #ffffff;
   }
